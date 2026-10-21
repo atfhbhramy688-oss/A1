@@ -1,0 +1,262 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background: #101014;
+    color: white;
+    font-family: tahoma, arial, sans-serif;
+
+}
+header{
+    background: #19191f;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+header h1{
+    color: #ff3030;
+
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+nav a:hover{
+    color: #ff3030;
+}
+hero{
+    text-align: center;
+    padding: 90px 20px;
+    background: linear-gradient(135deg,#281010,#101014);
+
+}
+hero h2{
+    font-size: 36px;
+}
+btn , button{
+display: inline-block;
+background: #ff3030;
+color: white;
+border: none;
+padding: 12px 22px;
+border-radius: 6px;
+cursor: pointer;
+text-decoration: none;
+}
+#games , #about{
+    padding: 30px;
+}
+.game {
+    background: #202027;
+    padding: 25px;
+    border-radius: 12px;
+    max-width: 400px;
+    border: 1px solid#393942;
+}
+footer{
+    background: #19191f;
+    text-align: center;
+    padding: 20px;
+}
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    width: 100%;
+    min-height: 100hv;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+button , a{
+    -webkit-tap-highlight-color: transparent;
+}
+@media(max-width:600px){
+    header{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.hero h2{
+    font-size: 26px;
+}
+#games,#about{
+    padding: 20px 16px;
+
+}
+.game{
+    width: 100%;
+}
+.game-grid{
+    display: grid;
+    grid-auto-columns: repeat(3,minmax(0,1fr));
+    gap: 20px;
+    width: 100%;
+}
+.game{
+    width: 100%;
+    max-width: none;
+    min-width: 0;
+    overflow-wrap: anywhere;
+    transition: transform 0.2s , border-color 0.2s ease;
+}
+.game:hover{
+    transform: translateY(-5px);
+    border-color:#ff3030; 
+
+}
+.game-icon{
+    font-size: 42px;
+    margin-bottom:12px;
+}
+@media(max-width:800px){
+    .game-grid{
+        grid-template-columns: repeat(2,minmax(0 , 1fr));
+    }
+}
+@media(max-width:500px){
+    .game-grid{
+        grid-template-columns: 1fr;
+    }
+}
+.hero h2{
+    font-size: 24px;
+}
+button{
+    min-height: 44px;
+}
+@media (prefers-reduced-motion: reduce){
+    *,
+    *::before
+    *::after{
+        scroll-behavior: auto !important;
+        transition: none !important;
+        animation: none !important;
+    }
+}
+.game-image{
+    display: block;
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+.game{
+    background: #19191f;
+    border: 1px solid #33333d;
+    border-radius: 12px;
+    padding: 16px;
+    transition: transform 0.2s ease, box-shadow 0.2 ease;
+
+}
+.game:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 0 18px #ff303044;
+}
+.game h3 {
+    color: #ff4040;
+}
+.game button{
+    width: 100%;
+    font-size: 15px;
+}
+@media(max-width:500px){
+    .game-image{
+        height: 210px;
+    }
+}
+body{
+    background: 
+    radial-gradient(
+    circle at top right,
+    #351010 0,
+    #101014 40% ,
+    #09090c 100%
+    );
+    color: #f5f5f5;
+}
+header h1{
+    color: #ff3030;
+    text-shadow: 0 0 15px #ff303077;
+    letter-spacing: 2px;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    background: #111116ee;
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid #ff303044;
+}
+.hero{
+    padding: 100px 20px;
+    background: radial-gradient(
+        ellipse at center ,
+        #5a151533
+        transparent 70%
+    );
+}
+.hero h2{
+    color: white;
+    text-shadow: 0 0 20px #ff303055;
+
+}
+button, 
+.btn{
+    background: linear-gradient(135deg, #ff4545 , #b80000);
+    color: white;
+    border: 1px solid #ff6565;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: transform 0.2s ,box-shadow 0.2s;
+}
+button:hover,
+.btn:hover{
+    box-shadow: 0 0 20px #ff303066;
+    transform: translateY(-2px);
+}
+@media (prefers-reduced-motion:reduce){
+    button,
+    .btn {
+transition: none;
+    }
+}
+button:hover,
+.btn:hover{
+    transform: none;
+}
+#gameSearch {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    padding: 14px;
+    margin: 20px 0;
+    border: 1px solid #444;
+    border-radius: 8px;
+background: #19191f;
+color: white;
+font: inherit;
+}
+#gameSearch :focus{
+    outline: 2px solid#ff3030;
+    outline-offset: 2px;
+}
+#saerchStatus{
+    color: #ccc;
+}

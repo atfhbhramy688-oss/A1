@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A! GAMENET</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <header>
+<H1>
+    GAMENET A!
+</H1>
+    <nav>
+<a href="#">خانه</a>
+<a href="#games">بازی ها</a>
+<a href="#about">درباره ما</a>
+    </nav>
+        </header>
+        <main>
+
+          <section class="hero">
+ <center>
+<h2>
+    دنیای گیم
+</h2>
+</center>
+
+<p>
+    خوش امدی نوب
+</p>
+<a href="#games" class="btn" >
+مشاهده بازی ها
+</a>
+
+            </section>
+            <section id="games">
+                <h2>
+                    بازی های محبوب
+                </h2>
+                <input id="gameSearch" type="search" placeholder="اسم بازی را جستوجو کن..." aria-label="جستوجو بازی"/>
+                <p id="searchstatus" aria-live="polite"></p>
+                <div class="games-gride">
+                <div class="game">
+                <div class="game-icon">🎯</div>
+                <img src="images/OIP.jpg" alt="counter-strik 1.6 " class="game-image">
+                    <h3>counter-strik 1.6</h3>
+                    <p>برای عاشقان بازی </p>
+                    <button onclick="showMessage('counter-strike1.6')">مشاهده بازی</button>
+                </div>
+                    
+                    
+                    <div class="game">
+                        <div class="game-icon">🚗</div>
+                        <img src="images/R.jpg" alt="GTA V" class="game-image">
+                        <h3>GTA V</h3>
+                        <p>ماجرا جویی آزاد</p>
+                        <button onclick="showMessage('GTA V')"> مشاهده بازی</button>
+                       
+                </div>
+                <div class="game">
+                    <div class="game-icon">⚔</div>
+                    <img src="images/OIP (2).jpg" alt="valorant" class="game-image">
+                    <h3>valorant</h3>
+                    <p>رقابت و مبارزه تاکتیکی</p>
+                    <button onclick="showMessage('valorant')">مشاهده بازی</button>
+                </div>
+            </section>
+            <center>
+            <section id="about">
+                <h2>درباره سایت</h2>
+                <p>یک سایت برای نوبان </p>
+
+            </section>
+            </center>
+        </main>
+        <footer>ساخته شده برای گیمر ها </footer>
+        <script src="non.js"></script>
+    
+</body>
+</html>
